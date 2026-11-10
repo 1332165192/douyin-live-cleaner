@@ -1,0 +1,17 @@
+﻿{
+  "manifest_version": 3,
+  "name": "抖音直播间净化助手",
+  "version": "1.2.0",
+  "description": "进入抖音直播间自动关闭弹幕和礼物提示（礼物特效/连击托盘/送礼消息/礼物声音），可随时手动开启；可选自动隐藏心愿单弹窗（默认不隐藏）。",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://live.douyin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
+
+
